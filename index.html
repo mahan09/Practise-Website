@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+    <html lang="en">
+    
+        
+        
+        <head>
+            <title>Online Store</title>
+        <meta charset="Utf-8">
+           <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <link href="css/bootstrap.min.css" rel="stylesheet">
+            <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+            <link href="css/styles.css" rel="stylesheet">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+            <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+            <script src="js/bootstrap.js"></script>
+            <script src="https://maps.googleapis.com/maps/api/js"></script>
+            <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+   
+           
+        </head>
+        
+        <body>
+            
+            
+           <div class = "navbar navbar-custom navbar-fixed-top">
+            <div class = "container">
+                <div class="navbar-header">
+                <a href="index.html"  class = "navbar-brand">HOT DEALS 4 YOU</a>
+                
+               
+         
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+              
+                </div>
+                
+                <div class="collapse navbar-collapse navHeaderCollapse">
+                    
+                    <ul class = "nav navbar-nav  navbar-right">
+                        
+                        <li class = "active"><a href="index.html">Home</a></li>
+                         <li class=""><a href="deals.html">Deals</a></li>
+                        <li><a data-toggle="modal" href="#myModal">Register</a></li>
+                            <li class="dropdown" id="menu1">
+             <a class="dropdown-toggle" data-toggle="dropdown" href="#menu1">
+               Login
+                <b class="caret"></b>
+             </a>
+             <div class="dropdown-menu">
+                <div class="form-group">
+               <form style="margin: 0px" accept-charset="UTF-8"><div style="margin:0;padding:0;display:inline">
+               <input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden"</div>
+                 <fieldset class='textbox' style="padding:10px">
+                   <input style="margin-top: 8px" class="form-control" type="text" placeholder="Name" />
+                   <input style="margin-top: 8px"  class="form-control" type="password" placeholder="Passsword" />
+            
+                   <input class="btn-danger" name="login" type="submit" value="Log In" />
+              
+                    <div class="checkbox">
+              <label><input type="checkbox" value="" checked>Remember me</label>
+            </div>
+                 </fieldset>
+               </form>
+             </div>
+           </li>
+                           
+                          
+                      
+                     
+                           
+ 
+             </div>         
+                    
+                    
+                </div>
+                
+                
+                
+            </div>
+            
+             </div>
+           
+          
+            
+           
+     
+ 
+  <div class="container" id="your-page" style="display:none;">
+   <div id="carousel-example-generic" class="carousel slide box-shadow--4dp" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+ 
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="img/shop.png" alt="...">
+      <div class="carousel-caption">
+          <p>Shopping Online</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="img/onlineeee.jpg" alt="...">
+      <div class="carousel-caption">
+          <p>Presents</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="img/online-shopping22.jpg" alt="...">
+      <div class="carousel-caption">
+          <p>Gifts</p>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div> <!-- Carousel -->
+    
+    
+    
+    
+    
+<div class="well box-shadow--4dp">
+    
+    <h1 class="text-centre">Welcome to Hot Deals...!</h1>
+
+</div>
+
+
+      <!-- Example row of columns -->
+      <div class="row-fluid">
+
+        <div class="col-sm-4">
+          <h2>Best Products</h2>
+         <p class="justtex">In this website you are able to find wide range of products from popular and famous merchandise which you easilly view and purchase. </p>
+          
+        </div>
+        <div class="col-sm-4">
+          <h2>Best Deals</h2>
+          <p class="justtex">Whatever deals you are looking, you are able to find on this website. We ensure that your customers are able to find the best and cheapest products. </p>
+          
+       </div>
+        <div class="col-sm-4">
+          <h2>Best Offers</h2>
+          <p class="justtex">Are you looking for valuable and effective offers? then you came to the right place because we always aim to bring the best offers from all over the world.</p>
+ 
+        </div>
+      </div>
+    <hr style="width: 100%; color: black; height: 0px; background-color:grey;" />
+     <div id="googleMap" style="width:950x;height:380px;"></div>
+  </div>
+  
+          
+  
+
+       <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="padding:35px 50px;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4><span class="glyphicon glyphicon-user"></span></span> REGISTRATION</h4>
+        </div>
+        <div class="modal-body" style="padding:40px 50px;">
+          <form role="form">
+             <div class="form-group">
+              <label for="fullnme">Full Name</label>
+              <input type="text" class="form-control" id="fullnme" placeholder="Enter Name">
+            </div>
+            <div class="form-group">
+              <label for="usrname">Email Address</label>
+              <input type="email" class="form-control" id="usrname" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="psw"> Password</label>
+              <input type="password" class="form-control" id="psw" placeholder="Enter password">
+            </div>
+          
+              <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Register</button>
+          </form>
+        </div>
+      </div>
+      
+    </div>
+       
+  </div> 
+   
+   
+           
+
+       
+            <div class="navbar navbar-custom navbar-fixed-bottom">
+  <footer class="container">
+    
+      <p class="navbar-text" >Developed By Mahan Zeraat-Talab 	&copy; 2016 </p
+      
+      
+    
+  </footer>
+            </div>
+            
+           
+            
+            
+
+    <script>
+          $('#myModal').modal;  
+    </script>
+            
+     <script>
+   jQuery(document).ready(function(){
+
+                                      
+        $( "#your-page" ).fadeIn(400);
+    });  
+
+     </script>
+           
+           <script>
+function initialize() {
+  var mapProp = {
+    center:new google.maps.LatLng(51.508742,-0.120850),
+    zoom:5,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+
+
+
+ 
+  
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+                
+    
+            
+        </body>
+    </html>
